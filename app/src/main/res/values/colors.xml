@@ -10,8 +10,11 @@
 
     <color name="white">#FFFFFFFF</color>
     <color name="red">#9E0707</color>
+    <color name="pink">#d33764</color>
+    <color name="bluee">#0f2fc0</color>
 
-    <color name="blue">#064cbd</color>
+
+    <color name="blue">#bfc3d4</color>
     <color name="blue_light">#5880C1</color>
 
 

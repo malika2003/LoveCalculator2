@@ -6,26 +6,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="12dp"
-    android:background="@color/blue_light"
+    android:background="@drawable/neew_love"
     tools:context=".fragment.CalculateFragment">
 
 
-    <ImageView
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
-        android:src="@drawable/ic_love"/>
+
 
     <TextView
-        android:textColor="@color/blue"
-        android:textSize="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Love Calculator"/>
-    <TextView
-        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="340dp"
         android:text="Fist Name"
         android:textSize="25sp"
         android:textColor="@color/black"
@@ -43,6 +32,7 @@
         android:inputType="text"
         android:background="@drawable/edittext"/>
     <TextView
+        android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"
         android:text="Second Name"
@@ -61,11 +51,19 @@
         android:inputType="text"
         android:background="@drawable/edittext"/>
 
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/blue"/>
+
     <com.google.android.material.button.MaterialButton
         app:cornerRadius="200dp"
         android:padding="10dp"
         android:backgroundTint="@color/blue"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="30dp"
         android:id="@+id/calculate_btn"
         android:textSize="20dp"
         android:text="Calculate"
@@ -73,37 +71,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
-  <LinearLayout
-      android:orientation="horizontal"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content">
-      <ImageView
-          android:layout_marginTop="60dp"
-          android:src="@drawable/love_ic"
-          android:layout_width="50dp"
-          android:layout_height="50dp"/>
-      <TextView
-          android:layout_marginLeft="-55dp"
-          android:layout_marginTop="110dp"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Home"
-          android:textSize="20dp"
-          android:textColor="@color/black"/>
-
-      <ImageView
-          android:layout_marginLeft="250dp"
-          android:layout_marginTop="60dp"
-          android:src="@drawable/love_ic"
-          android:layout_width="50dp"
-          android:layout_height="50dp"/>
-      <TextView
-          android:layout_marginLeft="-50dp"
-          android:layout_marginTop="110dp"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="History"
-          android:textSize="20dp"
-          android:textColor="@color/black"/>
-  </LinearLayout>
+    <TextView
+        android:id="@+id/some_Text"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>
